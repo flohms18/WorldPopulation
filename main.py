@@ -3,6 +3,8 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv('world_population.csv')
 
-GlobalWorldPopulation2022 = 0
-GlobalWorldPopulation2022 += df['2022 Population'].mean()
-print(GlobalWorldPopulation2022)
+Year = ['2022 Population','2020 Population','2015 Population']
+
+df.plot(kind='bar',x='Continent',y='2022 Population',legend=False)
+
+plt.show()
