@@ -3,4 +3,6 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv('world_population.csv')
 
-print(df['Rank'])
+GlobalWorldPopulation2022 = df['2022 Population']
+
+print(GlobalWorldPopulation2022)
