@@ -1,4 +1,6 @@
-def hello():
-    return 'Hello Python'
+import pandas as pd
+import matplotlib.pyplot as plt
 
-print(hello())
+df = pd.read_csv('world_population.csv')
+
+print(df['Rank'])
